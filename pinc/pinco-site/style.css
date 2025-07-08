@@ -69,6 +69,16 @@ body.dark-mode .meals-list li {
     display: none;
 }
 
+/* Add spacing below the image in the hero-text section */
+.hero-text img {
+    margin-top: 2rem;
+}
+
+/* Add spacing above the first h2 in the intro section */
+.intro-section .second {
+    margin-top: 5rem;
+}
+
 /* Mobile layout */
 @media (max-width: 768px) {
     #darkModeToggle {
@@ -338,6 +348,13 @@ h2 {
     font-size: 1.1rem;
 }
 
+.intro-section .church-image {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Meals Section */
 .meals-list {
     list-style: none;
@@ -352,6 +369,85 @@ h2 {
     padding: 0.75rem;
     border-radius: 5px;
     margin-bottom: 0.5rem;
+}
+
+/* Wrap each accordion and panel together */
+.accordion-container {
+    max-width: 600px;
+    /* Make it narrower */
+    margin: 1rem auto;
+    /* Center horizontally */
+    text-align: center;
+    /* Center the button text */
+}
+
+/* Accordion button style */
+.accordion {
+    background-color: #004b8d;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    /* Center the text */
+}
+
+/* Accordion hover/active states */
+.accordion:hover,
+.accordion.active {
+    background-color: #0066cc;
+}
+
+/* Accordion panel (hidden until expanded) */
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 0 0 5px 5px;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Grant images container */
+.grant-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* Individual images */
+.grant-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: 0.5rem;
+}
+
+/* Donate Section */
+.donor-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* Individual images */
+.donor-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: 0.5rem;
 }
 
 /* Donate Section */
